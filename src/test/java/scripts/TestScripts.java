@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import generic.BasePage;
@@ -26,6 +27,7 @@ public class TestScripts extends BaseTest{
 		pi.setLastName("fernandes");
 		pi.clickSaveBtn();
 		pi.verifyFirstname("Kevin");
+		Reporter.log("Hello",true);
 		
 		
 	}
